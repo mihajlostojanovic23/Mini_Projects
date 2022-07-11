@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 950px;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger img {
+    width: 25px;
+    height: 25px;
+}
+
+.img_logo img {
+    width: 200px;
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: unset;
+    font-size: 20px;
+    margin: 0px 20px;
+    color: black;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.menu a:hover {
+    transition: 300ms;
+    color: rgb(66, 66, 66);
+}
+
+.menu_hamburger {
+    position: fixed;
+    right: 0px;
+    top: 100px;
+    display: block;
+    background-color: yellow;
+    width: 100px;
+    text-align: center;
+    padding: 10px 0px;
+    z-index: 100;
+}
+
+.menu_hamburger a {
+    display: block;
+    text-decoration: unset;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.menu_hamburger {
+    display: none;
+}
+
+
+
+/* --------------------------------------------- SLIDER -----------------------------------------------*/
+
+.slider {
+    max-width: 1000px;
+    height: 450px;
+    margin: 0px auto;
+    position: relative;
+    box-shadow: 10px 10px 20px black;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    position: absolute;
+    object-fit: cover;
+}
+
+.gallery_title {
+    text-align: center;
+    margin: 20px 0px;
+    margin-top: 130px;
+}
+
+.next , .previous {
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.next {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.previous {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.modal_container {
+    background-color: rgba(26, 26, 26, 0.671);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.text {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.671);
+    box-shadow: 5px 10px 20px rgb(0, 0, 0);
+    color: white;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.text button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.modal_open {
+    width: 300px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.modal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio > h2 {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+[data-category='ostalo'] {
+    background-color: rgb(255, 209, 172);
+}
+
+[data-category='restorani'] {
+    background-color: rgb(202, 146, 72);
+}
+[data-category='hoteli'] {
+    background-color: rgb(240, 237, 75);
+}
+
+[data-category='sve'] {
+    background-color: rgb(177, 177, 177);
+}
+
+[data-category='kafane'] {
+    background-color: rgba(36, 50, 97, 0.452);
+}
+
+/*
+.portfolio_divs {
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3 1fr);
+    gap: 4em;
+    justify-content: center;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+*/
+
+.portfolio_divs {
+
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 0px auto;
+}
+
+
+.portfolio_item {
+    width: 300px;
+    height: 300px;
+    box-shadow: 5px 10px 20px black;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:992px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .slider {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:593px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons button {
+        width: 50%;
+        margin: 10px 0px;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Kurs 4</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<section class="navbar">
+    <div class="img_logo"><img src="img/logo.png" alt=""></div>
+    <div class="menu">
+        <a href="#">Pocetna</a>
+        <a href="#">O nama</a>
+        <a href="#">Usluge</a>
+        <a href="#">Galerija</a>
+        <a href="#">Kontakt</a>
+    </div>
+    <div class="hamburger">
+        <img src="img/icons8-menu-24.png" alt="">
+    </div>
+</section>
+<div class="menu_hamburger">
+    <a href="#">Pocetna</a>
+        <a href="#">O nama</a>
+        <a href="#">Usluge</a>
+        <a href="#">Galerija</a>
+        <a href="#">Kontakt</a>
+</div>
+
+<h2 class="gallery_title">Gallery</h2>
+
+<section class="slider">
+    <img class="img" src="img/slide1.jpg" alt="">
+    <img class="img" src="img/slide2.jpg" alt="">
+    <img class="img" src="img/slide3.jpg" alt="">
+    
+    <p class="next">></p>
+    <p class="previous"><</p>
+</section>
+
+<div class="modal">
+<button class="modal_open">DISPLAY MODAL</button>
+</div>
+
+
+<section class="modal_container">
+    <div class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo, temporibus harum illum molestiae eos at ipsa odit corrupti accusantium tempore repellendus! Perspiciatis esse perferendis sapiente. Sequi debitis sapiente dolore! Molestias provident omnis rerum odit ratione doloribus excepturi suscipit. Odio.
+        <button>X</button>
+    </div>
+</section>
+
+<section class="portfolio">
+    <h2>PORTFOLIO</h2>
+    <div class="buttons">
+        <button data-category="sve">sve</button>
+        <button data-category="restorani">restorani</button>
+        <button data-category="hoteli">hoteli</button>
+        <button data-category="kafane">kafane</button>
+        <button data-category="ostalo">ostalo</button>
+    </div>
+
+    <div class="portfolio_divs">
+        <div data-category="hoteli" class="portfolio_item">Hotel Madera</div>
+        <div data-category="restorani" class="portfolio_item">Restoran Perla</div>
+        <div data-category="restorani"   class="portfolio_item">Restoran Nais</div>
+        <div data-category="kafane" class="portfolio_item">Tomina prica</div>
+        <div  data-category="kafane" class="portfolio_item">Poslednji boem</div>
+        <div data-category="ostalo" class="portfolio_item">Menza</div>
+        <div data-category="hoteli" class="portfolio_item">Hotel Ambasador</div>
+        <div data-category="ostalo" class="portfolio_item">Cutura</div>
+        <div data-category="ostalo" class="portfolio_item">Salicin</div>
+        
+    </div>
+</section>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.drums2 {
+    position: relative;
+}
+
+.container .drums2 {
+    width: 700px;
+    height: auto;
+}
+
+.control {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    right: 0px;
+    top: 600px;
+    
+}
+
+.title {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.control .name {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    border-bottom: 2px solid white;
+    padding: 10px 0px;
+}
+
+.control_items{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.control_item {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    margin: 10px 0px;
+    letter-spacing: -2px;
+}
+
+kbd {
+    border: 3px solid grey;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0px 5px;
+}
+
+.key_desc {
+    margin: 0px 30px 0px 0px;
+}
+
+.crash_drums {
+position: absolute;
+top: 125px;
+left: 20px;
+transform:rotate(-6deg);
+width: 200px;
+height: 50px;
+}
+
+
+.hihat {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 188px;
+    right: 7px;
+}
+
+.number {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.crash, .ride, .floor_tom, .mid_tom, .high_tom, .kick, .kick1, .kick2, .snare, .hi_hat_open, .hi_hat_closed {
+    position: absolute;
+}
+.floor_tom{
+    top: 400px;
+    left: 90px;
+}
+
+.mid_tom {
+    top: 260px;
+    left: 210px;
+}
+
+.high_tom{
+    top: 265px;
+    left: 335px;
+}
+
+.kick1 {
+    top: 420px;
+    left: 240px;
+    
+}
+.kick2 {
+    top: 420px;
+    left: 320px;
+    
+}
+
+.crash {
+    top: 100px;
+    left: 40px;
+}
+
+.ride {
+    top: 100px;
+    left:130px;
+}
+
+.snare{
+    top: 315px;
+    left:425px;
+}
+.hi_hat_open{
+    top: 175px;
+    left:425px;
+}
+.hi_hat_closed {
+    top: 175px;
+    left: 520px;
+}
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+ <div class="container">
+    <div class="cashbox">
+        <div class="shopping_products">
+           
+            <div class="product">
+                <div class="img"><img src="./img/carrot.png" alt="">
+                    <div class="desc">
+                        <p class="name">Carrot</p>
+                        <p class="price">10e</p></div></div>
+                
+                <div class="add">
+                    <input type="number" value="0" min="0">
+                    <button onclick="add(this)">Add</button>
+                </div>
+            </div>
+
+
+
+            <div class="product">
+                <div class="img"><img src="./img/potato.png" alt="">
+                    <div class="desc">
+                        <p class="name">Potato</p>
+                        <p class="price">20e</p></div></div>
+                
+                <div class="add">
+                    <input type="number" value="0" min="0">
+                    <button onclick="add(this)">Add</button>
+                </div>
+            </div>
+
+
+
+            <div class="product">
+                <div class="img"><img src="./img/tomato.png" alt="">
+                    <div class="desc">
+                        <p class="name">Tomato</p>
+                        <p class="price">30e</p></div></div>
+
+                <div class="add">
+                    <input type="number" value="0" min="0">
+                    <button onclick="add(this)">Add</button>
+                </div>
+            </div>
+            
+           
+        </div>
+        <div class="shopping_cart">
+           <div class="image"></div>
+           <h2 class="korpa_title">Korpa</h2>
+           <p class="korpa_desc"></p>
+           <div class="total">Total: <p id="total"></p></div>
+        </div>
+    </div>
+ </div>
+
+
+ <script src="app.js"></script>   
+</body>
+</html>
